@@ -50,7 +50,7 @@ const LoginScreen = ({ onLogin, error }) => {
       }}>
         <div style={{ textAlign: "center", marginBottom: 24 }}>
           <div style={{ fontSize: 36, marginBottom: 8 }}>🤖</div>
-          <h1 style={{ color: "#f1f5f9", fontSize: 20, fontWeight: 700, margin: 0 }}>Agent Hub</h1>
+          <h1 style={{ color: "#f1f5f9", fontSize: 20, fontWeight: 700, margin: 0 }}>Kriya</h1>
           <p style={{ color: "#64748b", fontSize: 12, marginTop: 4 }}>Multi-agent workspace</p>
         </div>
         
@@ -459,7 +459,7 @@ export default function AgentWorkspace() {
         }}>
           {!sidebarCollapsed && (
             <div>
-              <div style={{ fontSize: 15, fontWeight: 700, color: "#f1f5f9", letterSpacing: "-0.3px" }}>Agent Hub</div>
+              <div style={{ fontSize: 15, fontWeight: 700, color: "#f1f5f9", letterSpacing: "-0.3px" }}>Kriya</div>
               <div style={{ fontSize: 10, color: "#64748b", marginTop: 2 }}>{agents.length} agents</div>
             </div>
           )}

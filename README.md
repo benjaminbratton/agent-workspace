@@ -1,8 +1,8 @@
-# Agent Workspace
+# Kriya
 
 A multi-agent chat interface for managing and communicating with multiple AI agents simultaneously. Built with React + Vite.
 
-![Agent Workspace Screenshot](docs/screenshot.png)
+![Kriya Screenshot](docs/screenshot.png)
 
 ## Features
 
@@ -28,7 +28,7 @@ This is a **frontend-only prototype**. All agent responses are currently hardcod
 
 ```
 ┌─────────────────────────────────────────┐
-│          Agent Workspace (React)        │
+│          Kriya (React)        │
 │  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐  │
 │  │Research│ │ Code │ │ Data │ │  QA  │  │
 │  │ Agent │ │Agent │ │Agent │ │Agent │  │
@@ -95,7 +95,7 @@ The dev server runs at `http://localhost:5173/`.
 ## Project Structure
 
 ```
-agent-workspace-prototype/
+kriya-prototype/
 ├── index.html          # Entry HTML
 ├── package.json
 ├── vite.config.js
