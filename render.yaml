@@ -1,0 +1,43 @@
+services:
+  # Backend API
+  - type: web
+    name: kriya-api
+    runtime: node
+    region: oregon
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: AUTH_USERNAME
+        sync: false
+      - key: AUTH_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ALLOWED_ORIGINS
+        value: https://kriya.onrender.com
+      - key: OPENCLAW_WEBHOOK_SECRET
+        sync: false
+
+  # Frontend
+  - type: web
+    name: kriya
+    runtime: static
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://kriya-api.onrender.com
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
